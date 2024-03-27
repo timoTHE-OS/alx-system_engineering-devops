@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# prints the name after the first dash of a file
+
+list=$(ls)
+
+for f in $list;
+do
+	echo "${f##*-}"
+done
